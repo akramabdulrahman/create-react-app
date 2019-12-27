@@ -534,6 +534,14 @@ module.exports = function(webpackEnv) {
                   importLoaders: 2,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
                 },
+				{
+				   loader: 'postcss-loader',
+					options: {
+					  plugins: function () {
+						return [require('postcss-rtl')()]
+					  }
+					}
+				},
                 'sass-loader'
               ),
               // Don't consider CSS imports dead code even if the
