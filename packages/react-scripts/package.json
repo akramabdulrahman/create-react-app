@@ -1,7 +1,7 @@
 {
-  "name": "react-scripts",
-  "version": "3.3.0",
-  "description": "Configuration and scripts for Create React App.",
+  "name": "fixtag-rtl-css-react-scripts",
+  "version": "3.3.1",
+  "description": "Configuration and scripts for Create React App. that usese rtl-css postcss loader",
   "repository": {
     "type": "git",
     "url": "https://github.com/facebook/create-react-app.git",
@@ -63,6 +63,7 @@
     "pnp-webpack-plugin": "1.5.0",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
+    "postcss-rtl": "^1.5.0",
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
