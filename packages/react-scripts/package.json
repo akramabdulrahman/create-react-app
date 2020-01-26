@@ -1,6 +1,6 @@
 {
   "name": "fixtag-rtl-css-react-scripts",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "description": "Configuration and scripts for Create React App. that usese rtl-css postcss loader",
   "repository": {
     "type": "git",
