@@ -1,6 +1,7 @@
 {
   "name": "wsmco-rtl-css-react-scripts",
   "version": "5.0.1",
+
   "description": "Configuration and scripts for Create React App. that usese rtl-css postcss loader",
   "repository": {
     "type": "git",
@@ -75,6 +76,7 @@
     "webpack-dev-server": "^4.6.0",
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
+
   },
   "devDependencies": {
     "postcss-rtlcss": "^3.6.3",
