@@ -7,6 +7,7 @@
  */
 // @remove-on-eject-end
 'use strict';
+const postcssRTLCSS = require('postcss-rtlcss');
 
 const fs = require('fs');
 const path = require('path');
@@ -28,6 +29,7 @@ const paths = require('./paths');
 const modules = require('./modules');
 const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
+
 const ForkTsCheckerWebpackPlugin =
   process.env.TSC_COMPILE_ON_ERROR === 'true'
     ? require('react-dev-utils/ForkTsCheckerWarningWebpackPlugin')
@@ -157,6 +159,7 @@ module.exports = function (webpackEnv) {
                   // so that it honors browserslist config in package.json
                   // which in turn let's users customize the target behavior as per their needs.
                   'postcss-normalize',
+                  postcssRTLCSS(),
                 ]
               : [
                   'tailwindcss',
